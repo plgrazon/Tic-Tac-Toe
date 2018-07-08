@@ -1,0 +1,22 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A CLI Tic-Tac-Toe game.",
+  "main": "tictoe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plgrazon/Tic-Tac-Toe.git"
+  },
+  "author": "Paolo Razon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plgrazon/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/plgrazon/Tic-Tac-Toe#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}

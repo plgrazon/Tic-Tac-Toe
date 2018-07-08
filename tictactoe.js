@@ -1,3 +1,7 @@
+// const prompt = require('prompt');
+//
+// prompt.start();
+
 // create a function that creates the board
 
 const buildBoard = () => {
@@ -8,11 +12,23 @@ const buildBoard = () => {
   ];
 }
 
+// current game
 let game = buildBoard();
-// create a function that will create a mark on the board
 
-const makeMove = (row, column, board) => {
-  board[row][column] = 'O';
+// restart game
+let restart = () => {
+  game = buildBoard();
+  return 'New game created!';
+}
+
+const makeMove = (row, column, mark) => {
+  if (game[row][column] === '') {
+    game[row][column] = mark;
+  } else {
+    console.log('Invalid move');
+  }
+
+  renderBoard();
 }
 
 const renderBoard = () => {
@@ -28,4 +44,6 @@ const renderBoard = () => {
   );
 }
 
+console.log(renderBoard());
+makeMove(0, 0, 'X');
 console.log(renderBoard());
